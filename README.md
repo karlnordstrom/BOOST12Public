@@ -21,8 +21,11 @@ Obtaining and running
 recompile FastJets:
 
 `MY_RIVET=/path/to/your/rivet`
+
 `THIS_DIR=$(pwd)`
+
 `patch  $MY_RIVET/include/Rivet/Projections/FastJets.hh < $THIS_DIR/BOOSTFastJets.patch`
+
 `cd $MY_RIVET && make -j 4 && make install`
 
 3. While in this directory, run:
@@ -37,7 +40,8 @@ doesn't have the correct rivet paths set up
 (rivet-config: command not found) you'll have to do things
 manually:
 
-`LIBDIR=`rivet-config --libdir``
+`LIBDIR=$(rivet-config --libdir)`
+
 `sudo cp -f libBOOSTFastJets.so $LIBDIR`
 
 Building an analysis and linking our library
