@@ -77,3 +77,4 @@ Implemented code
 * N-subjettiness (w/ minimisation algorithm)
 * Angular Correlation/Structure Functions
 * Grooming (wrapper of FastJet stuff)
+* Average ASF (note this not completely validated, don't rely on it without first making sure you're happy with it!)
