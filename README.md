@@ -15,19 +15,19 @@ Obtaining and running
 1. Setup the rivet installation you want to use with
 (in the correct directory):
 
-source rivet-env.sh
+`source rivet-env.sh`
 
 2. Patch FastJets to include the particles() method,
 recompile FastJets:
 
-MY_RIVET=/path/to/your/rivet
-THIS_DIR=$(pwd)
-patch  $MY_RIVET/include/Rivet/Projections/FastJets.hh < $THIS_DIR/BOOSTFastJets.patch
-cd $MY_RIVET && make -j 4 && make install
+`MY_RIVET=/path/to/your/rivet`
+`THIS_DIR=$(pwd)`
+`patch  $MY_RIVET/include/Rivet/Projections/FastJets.hh < $THIS_DIR/BOOSTFastJets.patch`
+`cd $MY_RIVET && make -j 4 && make install`
 
 3. While in this directory, run:
 
-make && make install **
+`make && make install` **
 
 4. Have fun looking at substructure histograms!
 
@@ -37,8 +37,8 @@ doesn't have the correct rivet paths set up
 (rivet-config: command not found) you'll have to do things
 manually:
 
-LIBDIR=`rivet-config --libdir`
-sudo cp -f libBOOSTFastJets.so $LIBDIR
+`LIBDIR=`rivet-config --libdir``
+`sudo cp -f libBOOSTFastJets.so $LIBDIR`
 
 Building an analysis and linking our library
 --------------------------------------------
@@ -49,7 +49,7 @@ yourself, keep in mind that you will have to explicitly link to the
 library when using rivet-buildplugin (in other words, if you decide
 you don't want to use our makefile ;) ):
 
-rivet-buildplugin RivetMYPLUGIN.so MYPLUGIN.cc -lBOOSTFastJets
+`rivet-buildplugin RivetMYPLUGIN.so MYPLUGIN.cc -lBOOSTFastJets`
 
 If you don't do this you'll still be able to build the analysis,
 but Rivet won't be able to access any functions from BOOSTFastJets
