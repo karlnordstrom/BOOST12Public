@@ -8,6 +8,8 @@ Status: UNVALIDATED
 Authors:
  - Karl Nordstrom <karl.nordstrom@cern.ch>
  - David Bjergaard <david.b@duke.edu>
+ - Ayana Arce <atarce@phy.duke.edu>
+ - Deepak Kar <deepak.kar@cern.ch>
 RunInfo:
   <Insert event types (not gen-specific), energy, any kinematic
   efficiency cut(s) that may be needed; essentially any details needed to set
