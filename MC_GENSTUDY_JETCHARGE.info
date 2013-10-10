@@ -1,16 +1,13 @@
 Name: MC_GENSTUDY_JETCHARGE
-Year: <Insert year of publication>
+Year: 2013
 Summary: <Insert short MC_GENSTUDY_JETCHARGE description>
-Experiment: <Insert the experiment name>
-Collider: <Insert MC_GENSTUDY_JETCHARGE collider>
+Experiment: MC
+Collider: MC
 InspireID: <Insert the Inspire ID>
 Status: UNVALIDATED
 Authors:
- - Your Name <your@email.address>
-#References:
-# - <Example: Phys.Lett.B639:151-158,2006, Erratum-ibid.B658:285-289,2008>
-# - <Example: doi:10.1016/j.physletb.2006.04.048>
-# - <Example: arXiv:hep-ex/0511054 (plus erratum)>
+ - David Bjergaard <david.b@duke.edu>
+ - Karl Nordstrom <karl.nordstrom@cern.ch>
 RunInfo:
   <Insert event types (not gen-specific), energy, any kinematic
   efficiency cut(s) that may be needed; essentially any details needed to set
@@ -27,7 +24,7 @@ Description:
   and if possible what it is useful for in terms of MC validation
   and tuning. Use \LaTeX for maths like $\pT > \unit{50}{\GeV}$.
   Use single quotes around the block if required (see YAML 1.2 manual)>'
-BibKey: 
+BibKey:
 BibTeX: ''
 ToDo:
  - Implement the analysis, test it, remove this ToDo, and mark as VALIDATED :-)
