@@ -25,7 +25,7 @@ Obtaining and running
 1. Setup the rivet installation you want to use with
 (in the correct directory):
 
-`source rivet-env.sh`
+`source rivetenv.sh`
 
 2. Patch FastJets to include the particles() method,
 recompile FastJets:
