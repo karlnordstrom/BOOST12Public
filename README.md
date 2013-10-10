@@ -4,8 +4,11 @@ Rivet Jet Substructure Study
 Authors
 -------
 Ayana Arce <atarce@phy.duke.edu>
+
 David Bjergaard <david.b@duke.edu>
+
 Deepak Kar <deepak.kar@cern.ch>
+
 Karl Nordstrom <karl.nordstrom@cern.ch>
 
 Rivet implementation
